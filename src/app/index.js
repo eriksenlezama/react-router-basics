@@ -11,7 +11,6 @@ import {Root} from "./components/Root";
 import {Home} from "./components/Home";
 import {User} from "./components/User";
 import {Header} from "./components/Header";
-import {NotFound} from "./components/NotFound";
 
 class App extends React.Component {
   render(){
@@ -21,7 +20,6 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route path="/user" component={User} />
           <Route path="/home" component={Home} />
-          <Route component={NotFound} />
         </Switch>
       </Router>
     );
